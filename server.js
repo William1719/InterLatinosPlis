@@ -3,12 +3,13 @@ import fetch from 'node-fetch';
 import 'dotenv/config';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { PORT } from './config.js';
 
 // Obtener el directorio actual del archivo
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PORT = 8888 } = process.env;
+const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET} = process.env;
 const base = 'https://api-m.sandbox.paypal.com';
 const app = express();
 
