@@ -31,7 +31,6 @@ const cardField = window.paypal.CardFields({
             "font-weight": "lighter",
             color: "#ccc",
         },
-        ".invalid": { color: "purple" },
     },
 });
 
@@ -105,8 +104,8 @@ async function createOrderCallback() {
             body: JSON.stringify({
                 cart: [
                     {
-                        id: "YOUR_PRODUCT_ID",
-                        quantity: "YOUR_PRODUCT_QUANTITY",
+                        id: "Membresia",
+                        quantity: "150.00",
                     },
                 ],
             }),
