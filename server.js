@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET} = process.env;
-const base = 'https://api-m.paypal.com';
+const base = 'https://api-m.paypal.com'; 
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
